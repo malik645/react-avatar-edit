@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  color: #333;
+  font-family: sans-serif;
+  text-align: center; 
+  height: 94vh;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  width: 50%;
+  padding-top: 50px;
+}
+
+div {
+  margin: 24px 0;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #000;
+}
+
+p {
+  color: #d41a1a;
+  font-size: 12px;
+  margin: 4px 0 8px 0;
+}
+
+button {
+  background: #e5e5e5;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 8px 16px;
+}
